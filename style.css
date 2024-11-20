@@ -5,7 +5,7 @@ body{
 
 /* Background image configuration for different devices*/
 .fondo{
-    background-image: url("Faq-accordion-main/assets/images/background-pattern-desktop.svg");
+    background-image: url("assets/images/background-pattern-desktop.svg");
     background-size: COVER;
     background-position: top;
     height: 33%;
