@@ -18,11 +18,11 @@ buttons.forEach((button, index) =>{
         }
         if(img.src.endsWith('icon-plus.svg')){
             text.style.display='block';
-            img.src = '/assets/images/icon-minus.svg';
+            img.src = 'assets/images/icon-minus.svg';
         }
         else{
             text.style.display='none';
-            img.src = '/assets/images/icon-plus.svg';
+            img.src = 'assets/images/icon-plus.svg';
         }
         
     })
