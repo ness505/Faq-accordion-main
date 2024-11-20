@@ -1,55 +1,74 @@
 body{
-    background-image: url("/assets/images/background-pattern-desktop.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    margin: 0;
     background-color: hsl(275, 100%, 97%);
+}
+
+/* Background image configuration for different devices*/
+.fondo{
+    background-image: url("/assets/images/background-pattern-desktop.svg");
+    background-size: COVER;
+    background-position: top;
+    height: 33%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
 }
 
 main{
     /* Dispotisition */
     display: flex;
     flex-direction: column;
-
     /* Center */
     align-items: center;
     justify-content: center;
-    margin: 0;
-    height: 95vh;
+    height: 100%;
 }
 
 /* Content */
 .WhiteBox{
-    background-color: white;
+    /* Size config */
+    margin-top: 110PX;
     width: 40%;
     border-radius: 15px;
     padding: 40px;
+
+    /* Design config */
+    background-color: white;
     box-shadow: 0px 5px 30px rgb(140, 105, 145,0.3);
     font-family: "Work Sans", sans-serif;
 
     h1{
-        font-size: 50px;
+        /* Display config */
         display: flex;
         margin-top: 0;
+
+        /* Style config*/
+        font-size: 45px;
+        color: hsl(292, 42%, 14%);
         img{
             padding-right: 20px;
+            width: 35px;
         }
     }
 
+    /* Questions section */
     h2{
         font-weight: 600;
         font-size: 16px;
+        margin-right: 30px;
     }
     h2:hover{
         color: hsl(293, 71%, 49%)
     }
+    /* Table for each question + image */
     table{
         width: 100%;
     }
     table tr td:last-child{
         text-align: right;
-        
     }
 
+    /* Event */
     .MoreInfo{
         cursor: pointer;
     }
@@ -64,10 +83,10 @@ main{
         font-size: 16px;
     }
     hr{
-        border: none; /* Elimina el estilo predeterminado */
-    height: 0.5px; /* Grosor delgado */
-    background-color: rgba(0, 0, 0, 0.1); /* Color negro casi transparente */
-    margin: 10px 0; /* Espaciado opcional */
+        border: none; 
+        height: 0.5px;
+        background-color: rgba(0, 0, 0, 0.1); 
+        margin: 10px 0; 
     }
 }
 
@@ -81,6 +100,28 @@ main{
 
 
 /*  Mobile Design styles */
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 
-  }
+    
+/* Content */
+.WhiteBox{
+    width: 70%;
+    border-radius: 8px;
+
+    h1{
+        font-size: 35px;
+        margin-bottom: 10px;
+        img{
+            width: 30px;
+        }
+
+    }
+
+    h2{
+        font-size: 14px;
+    }
+    .HiddenText{
+        font-size: 14px;
+    }
+    }
+}
