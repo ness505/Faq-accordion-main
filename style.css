@@ -27,14 +27,14 @@ main{
 /* Content */
 .WhiteBox{
     /* Size config */
-    margin-top: 110PX;
+    margin-top: 115PX;
     width: 40%;
     border-radius: 15px;
     padding: 40px;
 
     /* Design config */
     background-color: white;
-    box-shadow: 0px 5px 30px rgb(140, 105, 145,0.3);
+    box-shadow: 0px 10px 30px rgb(140, 105, 145,0.3);
     font-family: "Work Sans", sans-serif;
 
     h1{
