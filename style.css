@@ -1,0 +1,86 @@
+body{
+    background-image: url("/assets/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(275, 100%, 97%);
+}
+
+main{
+    /* Dispotisition */
+    display: flex;
+    flex-direction: column;
+
+    /* Center */
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 95vh;
+}
+
+/* Content */
+.WhiteBox{
+    background-color: white;
+    width: 40%;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0px 5px 30px rgb(140, 105, 145,0.3);
+    font-family: "Work Sans", sans-serif;
+
+    h1{
+        font-size: 50px;
+        display: flex;
+        margin-top: 0;
+        img{
+            padding-right: 20px;
+        }
+    }
+
+    h2{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    h2:hover{
+        color: hsl(293, 71%, 49%)
+    }
+    table{
+        width: 100%;
+    }
+    table tr td:last-child{
+        text-align: right;
+        
+    }
+
+    .MoreInfo{
+        cursor: pointer;
+    }
+
+    button{
+        border: none; background: none; padding: 0;
+    }
+
+    .HiddenText{
+        display: none;
+        color: hsl(292, 16%, 49%);
+        font-size: 16px;
+    }
+    hr{
+        border: none; /* Elimina el estilo predeterminado */
+    height: 0.5px; /* Grosor delgado */
+    background-color: rgba(0, 0, 0, 0.1); /* Color negro casi transparente */
+    margin: 10px 0; /* Espaciado opcional */
+    }
+}
+
+
+.attribution
+{
+    font-size: 11px; 
+    text-align: center;
+    a { color: hsl(228, 45%, 44%); }
+}
+
+
+/*  Mobile Design styles */
+@media (max-width: 500px) {
+
+  }
